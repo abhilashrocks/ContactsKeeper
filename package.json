@@ -8,6 +8,7 @@
     "server": "nodemon server.js",
     "client": "npm start --prefix client",
     "clieninstall": "npm install --prefix client",
+    "horoku-postbuil": "NPM_CONFIG_PRODUCTION=false npm install --prefix client && npm run build ==prefix client",
     "dev": "concurrently \"npm run server\" \" npm run client\""
   },
   "repository": {

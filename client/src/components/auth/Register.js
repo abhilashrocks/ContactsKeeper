@@ -21,7 +21,7 @@ const Register = (props) => {
         if (isAuthenticated) {
             props.history.push('/')
         }
-        if (error === 'User already exists') {
+        if (error === 'User alerady exists') {
             setAlert(error, 'danger');
             clearErrors();
         }
@@ -50,19 +50,19 @@ const Register = (props) => {
             <form onSubmit={onSubmit}>
                 <div className="form-group">
                     <label htmlFor="name">Name</label>
-                    <input type="text" name="name" required value={name} onChange={onChange} />
+                    <input type="text" name="name"  value={name} onChange={onChange} />
                 </div>
                 <div className="form-group">
                     <label htmlFor="email">Email Address</label>
-                    <input type="email" name="email" required value={email} onChange={onChange} />
+                    <input type="email" name="email"  value={email} onChange={onChange} />
                 </div>
                 <div className="form-group">
                     <label htmlFor="password">Password</label>
-                    <input type="password" name="password" required value={password} onChange={onChange} minLength='6' />
+                    <input type="password" name="password"  value={password} onChange={onChange} minLength='6' />
                 </div>
                 <div className="form-group">
                     <label htmlFor="password2">Confirm Password</label>
-                    <input type="password" required name="password2" value={password2} onChange={onChange} minLength='6' />
+                    <input type="password"  name="password2" value={password2} onChange={onChange} minLength='6' />
                 </div>
                 <div>
                     <input type="submit" value="Register" className="btn btn-primary btn-block" />
